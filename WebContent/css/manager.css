@@ -1,0 +1,258 @@
+/*reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6,a, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr,iframe {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+	text-decoration:none;
+	list-style:none;
+	
+}
+
+a,a:active,a:hover {outline: none;}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+
+
+/* General Style */ 
+
+html {
+	overflow-y:scroll;
+}
+
+
+body{
+	background:url(../images/pattern/pattern3.png) repeat ;
+	font:100% Arial,'Signika';
+	line-height:20px;
+	font-weight:normal;
+	font-style:normal;
+	color:#999;
+}
+
+#wrapper{
+	margin:50px auto 30px auto;
+	width:1500px;
+}
+
+header{
+	width:230px;
+	float:left;
+}
+
+
+/* Main navigation */
+#mainNav{
+	margin-left:6px;
+}
+
+#mainNav li{
+	
+	display:inline-block;
+	margin-left:5px;
+	margin-top:15px;
+	margin-bottom:5px;
+	width:215px;
+	height:70px;
+	border-right: 5px solid #e3e2e2;
+	float:left;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-border-radius:4px;
+	position:relative;
+	
+	
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), 				color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+}
+
+#mainNav li > a{
+	color:#999;
+	display:inline-block;
+	margin: 15px;
+	float:center;
+	background-repeat:no-repeat;
+	font-family: "Signika";
+	font-weight:300;
+	font-size:18px;
+	color:#787878;
+	width:65px;
+	height:21px;
+	
+
+}
+
+
+
+#mainNav li.active{
+	border-right: 5px solid #558e6a;
+	background:#fff  url(../images/nav-arrow-active.png) no-repeat 102% center;
+	
+	
+	
+}
+
+#mainNav li.active .tab{
+	color:#558e6a;
+	
+}
+
+
+
+/* End main navigation */
+#img{
+	margin-left:12px;
+	margin-bottom:50px;
+	position:relative;
+	
+}
+
+#img img{
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-border-radius:4px;	
+}
+
+
+#img hgroup{
+	background:#558e6a;
+	width:218px;
+	border-radius: 0px 0px 4px 4px;
+	-moz-border-radius:0px 0px 4px 4px;
+	-o-border-radius:0px 0px 4px 4px;
+	-webkit-border-radius:0px 0px 4px 4px;
+	text-align:center;
+	background:rgba(85,142,106,0.94);
+	margin-bottom:5px;
+	padding-top:10px;
+	position:absolute;
+	top:193px;
+	left:0;
+	line-height:28px;
+	
+}
+
+#img hgroup h1{
+	font-weight:bold;
+	font-size:33px;
+	color:#fff;
+	margin-bottom:3px;
+}
+
+#img hgroup h2{
+	
+	font-size:12px;
+	color:#fff;
+	padding-bottom: 3px;
+}
+
+#tabsContainer{
+	width:1200px;
+	float:left;
+	background:#e3e2e2;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:5px 5px 5px 5px;
+	margin-left:20px;
+	margin-bottom:10px;
+	position:relative;
+	
+}
+
+
+
+#innerBg{
+	background:#fff;
+	margin:0 auto;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:auto;
+}
+
+
+
+
+
+/* End general style */ 
+
+/* employee tab */
+
+
+#employee{
+	
+	font-size:12px;
+	width:478px;
+}
+
+/* End employee tab */
+
+
+/* reservation tab */
+
+
+#reservation{
+	
+	font-size:12px;
+	width:478px;
+}
+
+/* End reservation tab */
+
+
+/* bill tab */
+
+
+#bill{
+	
+	font-size:12px;
+	width:478px;
+}
+
+/* End bill tab */ 
+
+
+/* bl tab */
+
+#bl{
+	
+	font-size:12px;
+	width:478px;
+}
+
+/* End bl tab */
+
+
+
+/* Clear float style*/
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+}
+
+.clearfix:after{
+	clear:both;
+}
+/*End clear float style */
+
+
+
+/*-------------------------------------------------------------------------*/
+
+
+
