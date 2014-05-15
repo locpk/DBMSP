@@ -7,7 +7,6 @@ Author: Tom Chan
 		<title>Bay-Flower</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
 		<link href="css/panel.css" rel="stylesheet" type="text/css"  media="all" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|Engagement' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/move-top.js"></script>
@@ -20,17 +19,6 @@ Author: Tom Chan
 							});
 						});
 					</script>
-		<script>
-			$("#slideshow > div:gt(0)").hide();
-			setInterval(function() { 
-			  $('#slideshow > div:first')
-			    .fadeOut(500)
-			    .next()
-			    .fadeIn(500)
-			    .end()
-			    .appendTo('#slideshow');
-			},  2000);
-		</script>
 		<!--head from travel media -->
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
@@ -60,10 +48,10 @@ Author: Tom Chan
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<!---webfonts---->
 		<!--start slider -->
-	    <link rel="stylesheet" href="css/fwslider.css" media="all">
-		<script src="js/jquery-ui.min.js"></script>
-		<script src="js/css3-mediaqueries.js"></script>
-		<script src="js/fwslider.js"></script>
+	    <link rel="stylesheet" href="slider/fwslider.css" media="all">
+		<script src="slider/jquery-ui.min.js"></script>
+		<script src="slider/css3-mediaqueries.js"></script>
+		<script src="slider/fwslider.js"></script>
 		<!--end slider -->
 		<!---calender-style---->
 		<link rel="stylesheet" href="css/jquery-ui.css" />
@@ -111,11 +99,7 @@ Author: Tom Chan
 			
 			<!---start-header---->
 			<div class="header">
-				<!--- start-logo---->
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" title="voyage" /></a>
-				</div>
-				<!--- //End-logo---->
+				
 				<!--- start-top-nav---->
 				<div class="top-nav">
 						<ul class="flexy-menu thick orange">
@@ -161,7 +145,6 @@ Author: Tom Chan
 		                        <!-- Text title -->
 		                        <h4 class="title">Hi This the Bay of Heaven!</h4>
 		                        <!-- /Text title -->
-
 		                    </div>
 		                </div>
 		                 <!-- /Texts container -->
@@ -183,7 +166,7 @@ Author: Tom Chan
 				  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 				  <script>
 				  $(function() {
-				    $( "#datepicker1" ).datepicker();
+				    ( "#datepicker1" ).datepicker();
 					$( "#datepicker2" ).datepicker();
 				  });
 				  </script>
@@ -196,11 +179,11 @@ Author: Tom Chan
 			  			<div class="contact-form">
 					  		<form>
 					  		<div class="contact-box-left">
-					  			<input type="text" class="textbox" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}">
-					  			<input type="text" class="textbox" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}">
-					  			<input type="text" class="textbox" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
-					  			<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-								<input type="text" class="textbox" value="ID Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ID Number';}">
+					  			<input type="text" class="textbox"  placeholder = First Name">
+					  			<input type="text" class="textbox"  placeholder="Last Name">
+					  			<input type="text" class="textbox" placeholder="Phone">
+					  			<input type="text" class="textbox" placeholder="Email">
+								<input type="text" class="textbox" placeholder="ID Number">
 								<br />
 								<select name="roomtype">
 								<option value="One">One</option>
@@ -208,13 +191,13 @@ Author: Tom Chan
 								<option value="Three">Three</option>
 								<option value="Deluxe">Deluxe</option>
 								</select>
-					  			<input type="text" class="textbox" value="Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Number';}">
+					  			<input type="text" class="textbox" placeholder="Number">
 								<br />
-					  			<input class="date" id="datepicker1" type="text" value="From" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'From';}">
-					  			<input class="date" id="datepicker2" type="text" value="To" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'To';}">
+					  			<input class="date" id="datepicker1" type="text" placeholder="From">
+					  			<input class="date" id="datepicker2" type="text" placeholder="To">
 					  		</div>
 					  		<div class="contact-box-right">
-					  			<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+					  			<textarea placeholder="Message"></textarea>
 					  			<input type="submit" value="Book it!" />
 					  			<div class="clear"> </div>
 					  		</div>
@@ -227,51 +210,49 @@ Author: Tom Chan
 			   </div>
 			   <!----Begin About----->
 			   <div class="top-grids" id="about">
-			  		<div class="welcome-note">
-			  			<h3>Giving Guiding to Travel</h3>
-			  			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat !</p>
-			  		</div>
 			  		<div class="wrap">
 			  			<div class="top-grid-row">
 					  		<div class="top-grid">
-					  			<h3><img src="images/icon1.png">Guding to travel</h3>
-					  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					  			<h3><img src="images/icon1.png">Taking Bus</h3>
+					  			<p>The transportation near the Bay-Flower Hotel is very convenient. There are three kinds of bus can reach the station called Bay-Flower Hotel station, and you will see our Hotel building.</p>
 					  		</div>
 					  		<div class="top-grid">
-					  			<h3><img src="images/icon5.png">Give live tips</h3>
-					  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					  			<h3><img src="images/icon1.png">Taking Subway</h3>
+					  			<p>There is a subway station near the Bay-Flower Hotel , so the traffic is very convenient. If you want to the downtown, you just only spend 5 minutes to take subway. There three subway lines go through the Bay-Flower Hotel station</p>
 					  		</div>
 					  		<div class="top-grid">
-					  			<h3><img src="images/icon4.png">Sharing ideas</h3>
-					  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					  			<h3><img src="images/icon1.png">Driving Car
+	                                                                     </h3>
+					  			<p>Bay-Flower Hotel is just a 45-minute drive from Zhuhai International Airport. Alternatively, visitors can take the Airport Express Line (AEL) to Bay-Flower Station where there is a free hotel shuttle bus to transport you to Bay-Flower Hotel for city breaks in a busy bustling international city. Direct airport coach transfers are also available.</p>
 					  		</div>
 				  		<div class="clear"> </div>
 				  		</div>
 				  		<div class="our-mission">
 					  			<div class="our-mission-left">
-					  				<h4>Our mission</h4>
+					  			<h4>The Tourist Attractions</h4>
 					  			</div>
 					  			<div class="our-mission-right">
-					  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					  				<p>There are some tourist attractions near our Hotel.</p>
 					  			</div>
 					  			<div class="clear"> </div>
 				  		</div>
 				  		
 				  		<div class="sub-about-grids">
 					<div class="sub-about-grid">
-						<p class="sub-about-grid-people">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<h4><img src="images/people1.jpg" alt="" />Lorem ipsum</h4> 
-						<span>consectetur adipisicing</span>
+						<p class="sub-about-grid-people">Zhuhai royal spa is a four-star spa leisure tourism resort, hot spring bathing soup, health rehabilitation, accommodation, conference, entertainment and other service projects, with dozens of hot spring pools and complete health facilities and health project form former imperial hot springs hot springs health system.                                                                                           </p>
+						<h4><img src="images/1.jpg" alt="" /></h4> <h4>Zhuhai royal spa</h4> 
+						<span>Zhuhai royal spa</span>
+					
 					</div>
 					<div class="sub-about-grid">
-						<p class="sub-about-grid-people">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<h4><img src="images/people2.jpg" alt="" />Exercitation</h4> 
-						<span>consectetur adipisicing</span>
+						<p class="sub-about-grid-people">ChangLong Ocean Park is located in Zhuhai ocean kingdom, is the design of ChangLong group from the world top companies. ChangLong total construction project covers an area of ocean kingdom for more than the world's largest ocean park. The Ocean kingdom has eight themed areas, present different ocean view from all over the world and each area contains lots of amusement design, performance and ocean animal.</p>
+						<h4><img src="images/2.jpg" alt="" />ChangLong Ocean Park</h4> 
+						<span>ChangLong Ocean Park</span>
 					</div>
 					<div class="sub-about-grid">
-						<p class="sub-about-grid-people">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>	
-						<h4><img src="images/people3.jpg" alt="" />Consequat</h4> 
-						<span>consectetur adipisicing</span>
+						<p class="sub-about-grid-people">The ocean covers an area of 40000 square meters of hot spring tourism resort projects, consists of eight parts, they are the ocean hot spring, ocean spring hotel, mysterious island, fisherman's wharf, dream theater and physical examination center, (expand the training camp and sports clubs, including golf courses).                                                                                             </p>	
+						<h4><img src="images/3.jpg" alt="" /></h4> <h4>Ocean Hot Springs</h4> 
+						<span>Ocean Hot Springs</span>
 					</div>
 					<div class="clear"> </div>
 				</div>
@@ -449,7 +430,6 @@ Author: Tom Chan
 							</div>
 						</div>
 					</div>
-					
 				</div>
 					
 					<!-- the jScrollPane script -->
