@@ -5,66 +5,41 @@ Author: Tom Chan
 <html>
 	<head>
 		<title>Bay-Flower</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
-		<link href="css/panel.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/panel.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|Engagement' rel='stylesheet' type='text/css'>
+		<!-- Load jQuery JS -->
+   		<script src="js/jquery-1.9.1.js"></script>
+		<!-- Load jQuery UI Main JS  -->
+    	<script src="js/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
 		<script type="text/javascript">
-						jQuery(document).ready(function($) {
+						$(document).ready(function($) {
 							$(".scroll").click(function(event){		
 								event.preventDefault();
 								$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 							});
 						});
-					</script>
-		<!--head from travel media -->
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<script src="js/jquery.min.js"></script>
-
-		<!---smoth-scrlling---->
-			<script type="text/javascript">
-				$(document).ready(function(){
-									$('a[href^="#"]').on('click',function (e) {
-									    e.preventDefault();
-									    var target = this.hash,
-									    $target = $(target);
-									    $('html, body').stop().animate({
-									        'scrollTop': $target.offset().top
-									    }, 1000, 'swing', function () {
-									        window.location.hash = target;
-									    });
-									});
-								});
-				</script>
-		<!---//smoth-scrlling---->
-		<!----start-top-nav-script---->
-		<script type="text/javascript" src="js/flexy-menu.js"></script>
-		<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
-		<!----//End-top-nav-script---->
+						</script>
+		
 		<!---webfonts---->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<!---webfonts---->
 		<!--start slider -->
-	    <link rel="stylesheet" href="slider/fwslider.css" media="all">
-		<script src="slider/jquery-ui.min.js"></script>
-		<script src="slider/css3-mediaqueries.js"></script>
+	    <link rel="stylesheet" href="slider/fwslider.css">
 		<script src="slider/fwslider.js"></script>
 		<!--end slider -->
-		<!---calender-style---->
-		<link rel="stylesheet" href="css/jquery-ui.css" />
-		<!---//calender-style---->
-		
+   	 	<script src="js/datepicker.js"></script>
+   	 	<script src="insert.js"></script>
 	</head>
 	<body>
 	<div class="meny">
 	<h2>Menu</h2>
 				<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Comments</a></li>
-				<li><a href="#">Specials</a></li>
 				<li><a href="#">Github</a></li>
 				
 			</ul>
@@ -80,7 +55,6 @@ Author: Tom Chan
 					<ul>
 						<li><a  href="login.jsp"><span> </span> Manager Login</a></li>
 						<li><p class="contact-info">Call Us Now : 123-456-789</p></li>
-						<div class="clear"> </div>
 					</ul>
 				</div>
 				<div class="top-header-right">
@@ -89,7 +63,6 @@ Author: Tom Chan
 						<li><a class="twit" href="#"><span> </span></a></li>
 						<li><a class="thum" href="#"><span> </span></a></li>
 						<li><a class="pin" href="#"><span> </span></a></li>
-						<div class="clear"> </div>
 					</ul>
 				</div>
 				<div class="clear"> </div>
@@ -162,47 +135,37 @@ Author: Tom Chan
 			  		<h3>Booking</h3>
 			  		<p>Make yourself at home.</p>
 			  	</div>
-				<!---strat-date-piker---->
-				  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-				  <script>
-				  $(function() {
-				    ( "#datepicker1" ).datepicker();
-					$( "#datepicker2" ).datepicker();
-				  });
-				  </script>
-				<!---/End-date-piker---->
+			  	
+			  
+				
 			  	<div class="contact-box">
 			  			<div class="contact-map">
-			  				<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/?ie=UTF8&amp;ll=22.593726,79.453125&amp;spn=3.803105,6.696167&amp;t=m&amp;z=8&amp;output=embed"></iframe></small>
+			  				<iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/?ie=UTF8&amp;ll=22.593726,79.453125&amp;spn=3.803105,6.696167&amp;t=m&amp;z=8&amp;output=embed"></iframe></small>
 			  			</div>
 			  			
 			  			<div class="contact-form">
-					  		<form>
+					  		<form id="book" method="get">
 					  		<div class="contact-box-left">
-					  			<input type="text" class="textbox"  placeholder = First Name">
-					  			<input type="text" class="textbox"  placeholder="Last Name">
-					  			<input type="text" class="textbox" placeholder="Phone">
-					  			<input type="text" class="textbox" placeholder="Email">
-								<input type="text" class="textbox" placeholder="ID Number">
-								<br />
-								<select name="roomtype">
+					  			<input type="text" class="textbox" id="cus_name" placeholder = "Name">
+					  			<input type="text" class="textbox" id="cus_phone" placeholder="Phone">
+								<input type="text" class="textbox" id="cus_id" placeholder="ID Number">
+								<select name="roomtype" id="roomtype">
 								<option value="One">One</option>
 								<option value="Two">Two</option>
 								<option value="Three">Three</option>
 								<option value="Deluxe">Deluxe</option>
 								</select>
-					  			<input type="text" class="textbox" placeholder="Number">
+					  			<input type="text" class="textbox" id="cus_num" placeholder="Number">
 								<br />
-					  			<input class="date" id="datepicker1" type="text" placeholder="From">
-					  			<input class="date" id="datepicker2" type="text" placeholder="To">
+					  			<input  type="text" id="from" placeholder="From">
+					  			<input  type="text" id="to" placeholder="To">
 					  		</div>
 					  		<div class="contact-box-right">
-					  			<textarea placeholder="Message"></textarea>
+					  			<textarea id="cus_message" placeholder="Message"></textarea>
 					  			<input type="submit" value="Book it!" />
-					  			<div class="clear"> </div>
 					  		</div>
-					  		<div class="clear"> </div>
 					  		</form>
+					  		<div id="result"></div>
 			  			</div>
 			  	
 			  </div>
@@ -431,9 +394,9 @@ Author: Tom Chan
 						</div>
 					</div>
 				</div>
-					
+				</div>
 					<!-- the jScrollPane script -->
-					<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+					
 					<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 					<!-- the jScrollPane script -->
 					<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
