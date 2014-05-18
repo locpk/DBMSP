@@ -9,8 +9,9 @@ var from= $('#from').val();
 var to= $('#to').val();
 var cus_message= $('#cus_message').val();
 $.ajax({type:"post",url:"book.jsp",data:"cus_id="
-+cus_id+"cus_name="+cus_name+"cus_phone="+cus_phone+"roomtype="+roomtype+"cus_num="+cus_num+"from="+from+"to="+to+"cus_message="+cus_message,success:function(){$('#result').hide(); 
-    $("#result").html("<div class=\"contact-box-right\"><textarea id=\"cus_message\" placeholder=\"You Have Booked Sucessfully!\"></textarea></div>").fadeIn("slow"); } });
++cus_id+"cus_name="+cus_name+"cus_phone="+cus_phone+"roomtype="+roomtype+"cus_num="+cus_num+"from="+from+"to="+to+"cus_message="+cus_message,success:function(){ 
+    $("#mes").fadeIn("slow"); } });
 return false;
 });
+
 });

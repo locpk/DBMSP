@@ -37,6 +37,21 @@ Author: Tom Chan
    	 	<script>
 		$("#book").validate();
 		</script>
+		<!----meny----->
+		<script src="js/meny.js"></script>
+		<script src="js/meny.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		    $("#mes").fadeOut();
+		});
+		</script>
+		<script>
+		$(document).ready(function(){
+		    $("#mes").click(function(){
+		    	$("#mes").fadeToggle( "slow" );
+		    });
+		});
+		</script>
 	</head>
 	<body>
 	<div class="meny">
@@ -57,7 +72,7 @@ Author: Tom Chan
 				
 					<ul>
 						<li><a  href="login.jsp"><span> </span> Manager Login</a></li>
-						<li><p class="contact-info">Call Us Now : 123-456-789</p></li>
+						<li><p class="contact-info">Call Us Now : 123-030-0002</p></li>
 					</ul>
 				</div>
 				<div class="top-header-right">
@@ -132,7 +147,7 @@ Author: Tom Chan
 		    <!--/slider -->
 		</div>
 		<!---start-contact---->
-			  <div class="contact" id="contact">
+			  <div class="contact" id="booking">
 			  	
 			  	<div class="contact-header">
 			  		<h3>Booking</h3>
@@ -146,7 +161,7 @@ Author: Tom Chan
 			  				<iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/?ie=UTF8&amp;ll=22.593726,79.453125&amp;spn=3.803105,6.696167&amp;t=m&amp;z=8&amp;output=embed"></iframe></small>
 			  			</div>
 			  			
-			  			<div class="contact-form" id="result">
+			  			<div class="contact-form">
 					  		<form id="book" method="POST">
 					  		<div class="contact-box-left">
 					  			<input type="text" class="textbox" id="cus_name" name="name" placeholder = "Name" required />
@@ -165,7 +180,8 @@ Author: Tom Chan
 					  		</div>
 					  		<div class="contact-box-right">
 					  			<textarea id="cus_message" placeholder="Message"></textarea>
-					  			<input type="submit" value="Book it!" />
+					  			<input type="submit" id="result" value="Book it!" />
+					  			<input type="reset" id="mes" value="You Have Booked Sucessfully!" />
 					  		</div>
 					  		</form>
 					  		
@@ -283,10 +299,7 @@ Author: Tom Chan
 		</div>
 					
 				<!--End container-->
-			<!----meny----->
-	</div>
-		<script src="js/meny.js"></script>
-		<script src="js/meny.min.js"></script>
+
 	</body>
 </html>
 

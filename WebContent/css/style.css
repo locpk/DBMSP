@@ -722,7 +722,26 @@ input[type="search"].sb-search-input {
 	padding: 1.5em;
 	cursor: pointer;
 	display: block;
-	width: 99.2%;
+	width: 80%;
+	margin: auto;
+	outline:none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+#mes {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+	color: #fff;
+	background: #22E113;
+	border: none;
+	padding: 1.5em;
+	cursor: pointer;
+	display: block;
+	width: 80%;
+	margin: auto;
 	outline:none;
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
