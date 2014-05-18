@@ -9,18 +9,12 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/ihover.css" rel="stylesheet">
 <link rel="stylesheet" href="css/manager.css" />
-<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika:400,600,700,300" />
 <!-- JavaScript lib -->
 <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
-<script src="js/jquery.quicksand.js" type="text/javascript"></script>
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="js/jquery.poshytip.min.js" type="text/javascript"></script>
-<script src="js/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
-<script src="js/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
-<script src="js/jquery.validate.js" type="text/javascript"></script>
-<script src="js/custom.js" type="text/javascript"></script>
+<script src="js/manager.js" type="text/javascript"></script>
 <script src="js/Ajax.js" type="text/javascript"></script>
 </head>
 <body onload="showData('temp')">
@@ -105,12 +99,14 @@
 				<table class="table table-hover" >
               <thead>
                 <tr>
-                  <th>Employee ID</th>
+                  <th>ID No.</th>
                   <th>Name</th>
-                  <th>Gender</th>
-                  <th>Street</th>
-                  <th>City</th>
+                  <th>Room Type</th>
+                  <th>Amount</th>
                   <th>Phone</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Message</th>
                 </tr>
               </thead>
               <tbody id="trev">

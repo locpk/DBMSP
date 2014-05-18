@@ -1,14 +1,4 @@
-/*reset*/
-html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6,a, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr,iframe {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align:baseline;
-	font: inherit;
-	text-decoration:none;
-	list-style:none;
-	
-}
+
 
 a,a:active,a:hover {outline: none;}
 
@@ -46,9 +36,7 @@ header{
 
 
 /* Main navigation */
-#mainNav{
-	margin-left:6px;
-}
+
 
 #mainNav li{
 	
@@ -158,17 +146,17 @@ header{
 }
 
 #tabsContainer{
-	width:1200px;
-	float:left;
-	background:#e3e2e2;
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-webkit-border-radius:4px;
-	padding:5px 5px 5px 5px;
-	margin-left:20px;
-	margin-bottom:10px;
-	position:relative;
+	width: auto;
+	float: left;
+	background: #e3e2e2;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 5px 5px 5px 5px;
+	margin-left: 300px;
+	margin-bottom: 10px;
+	position: absolute;
 	
 }
 
@@ -196,7 +184,6 @@ header{
 #employee{
 	
 	font-size:12px;
-	width:478px;
 }
 
 /* End employee tab */
@@ -208,7 +195,6 @@ header{
 #reservation{
 	
 	font-size:12px;
-	width:478px;
 }
 
 /* End reservation tab */
@@ -220,7 +206,6 @@ header{
 #bill{
 	
 	font-size:12px;
-	width:478px;
 }
 
 /* End bill tab */ 
@@ -231,7 +216,6 @@ header{
 #bl{
 	
 	font-size:12px;
-	width:478px;
 }
 
 /* End bl tab */
