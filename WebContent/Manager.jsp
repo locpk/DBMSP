@@ -12,33 +12,16 @@
 <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika:400,600,700,300" />
 <!-- JavaScript lib -->
-<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
 <script src="js/jquery.quicksand.js" type="text/javascript"></script>
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="js/jquery.poshytip.min.js" type="text/javascript"></script>
 <script src="js/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
 <script src="js/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script src="js/jquery.gmap.min.js" type="text/javascript"></script>
 <script src="js/jquery.validate.js" type="text/javascript"></script>
 <script src="js/custom.js" type="text/javascript"></script>
 <script src="js/Ajax.js" type="text/javascript"></script>
-
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-
-<!--[if lt IE 8]>
-<style>
-/* For IE < 8 (trigger hasLayout) */
-.clearfix {
-    zoom:1;
-}
-</style>
-<![endif]-->  
 </head>
 <body onload="showData('temp')">
 

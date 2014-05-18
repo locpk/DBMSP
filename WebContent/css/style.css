@@ -1030,26 +1030,26 @@ input[type="search"].sb-search-input {
 	background: transparent url(../images/g1.jpg) no-repeat center center;
 	border-radius: 50%;
 }
+.ca-item-1 .ca-icon{
+	background-image:url(../images/r1.png);
+}
 .ca-item-2 .ca-icon{
-	background-image:url(../images/g2.jpg);
+	background-image:url(../images/r2.png);
 }
 .ca-item-3 .ca-icon{
-	background-image:url(../images/g3.jpg);
+	background-image:url(../images/r3.png);
 }
 .ca-item-4 .ca-icon{
-	background-image:url(../images/g4.jpg);
+	background-image:url(../images/r4.png);
 }
 .ca-item-5 .ca-icon{
-	background-image:url(../images/g1.jpg);
+	background-image:url(../images/r5.png);
 }
 .ca-item-6 .ca-icon{
-	background-image:url(../images/g2.jpg);
+	background-image:url(../images/r6.png);
 }
 .ca-item-7 .ca-icon{
-	background-image:url(../images/g3.jpg);
-}
-.ca-item-8 .ca-icon{
-	background-image:url(../images/g4.jpg);
+	background-image:url(../images/r7.png);
 }
 .ca-item h3{
 	font-family: 'Waiting for the Sunrise', cursive;
